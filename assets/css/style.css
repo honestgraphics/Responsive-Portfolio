@@ -1,0 +1,634 @@
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+
+/* Home/Index.html/About */
+
+
+body {
+    background-image: url("../images/b1.png");
+}
+
+/* HEADER AREA */
+
+.headerWrapper {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    border-top: 2px solid #d0cdc7;
+    border-bottom: 2px solid #d0cdc7;
+    background-color: #fff;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nameContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #11ab9f;
+    color: white;
+    display: inline-block;
+}
+
+.Jeannie {
+    font-size: 40px;
+    padding-left: 40px;
+    font-family: 'Homemade Apple', cursive;
+    display: inline-block;
+}
+
+.Rose {
+    font-size: 50px;
+    font-family: 'Francois One', sans-serif;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.pageLink {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-decoration: none;
+}
+
+
+.pageLink a {
+    text-decoration: none;
+    color: #a6acb7;
+}
+
+.pageLink a:hover {
+    color: #11ab9f;
+}
+
+ul {
+
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+.link1 {
+    border-right: 1px solid #e2e0dd;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+}
+
+.link2 {
+    border-right: 1px solid #e2e0dd;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+}
+
+.link3 {
+    padding-left: 20px;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+}
+
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+
+
+/* MAIN CONTENT AREA */
+
+.bodyContainer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content {
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+
+.aboutmeWrapper {
+    width: 65%;
+    background-color: #fff;
+    margin-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    border: 1px solid #e2e0dd;
+}
+
+.aboutMe {
+    border-bottom: 3px solid #eeedeb;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-style: bold;
+    color: #11ab9f;
+    font-family: 'Francois One', sans-serif;
+}
+
+.portrait {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 1.5%;
+}
+
+p {
+    font-size: 22px;
+    line-height: 38px;
+    color: #656565;
+    margin-bottom: 18px;
+}
+
+ul {
+    list-style-type: circle;
+    color: #656565;
+    margin-left: 10%;
+    margin-bottom: 18px;
+    line-height: 37px;
+}
+
+.connectwithmeWrapper {
+    background-color: #fff;
+    margin-top: 25px;
+    width: 21%;
+    height: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #e2e0dd;
+}
+
+.connectwithMe {
+    font-size: 24px;
+    font-style: bold;
+    border-bottom: 2px solid #efeeec;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    color: #11ab9f;
+    font-family: 'Francois One', sans-serif;
+}
+
+/* .socialContainer {
+    width: 100%;
+    } */
+
+.imageLink {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.social1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+
+/* FOOTER AREA */
+
+footer {
+    width: 100%;
+    background-color: #666666;
+    color: #aeaeae;
+    text-align: Center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    border-top: 5px solid #56aaa4;
+    font-family: 'Francois One', sans-serif;
+}
+
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+
+/* Portfolio Page */
+
+.portfolioContainer {
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.portfolio1 img {
+    width: 100% !important;
+}
+
+.portfolioRow1 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.portfolioRow2 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.portfolioRow3 {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+
+.portfolio1 {
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.portfolio2 {
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.portfolio3 {
+    position: relative;
+    margin-top: 25px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.portfolio4 {
+    position: relative;
+    margin-top: 25px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.portfolio5 {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+a.picture {
+    position: absolute;
+    top: 67%;
+    text-align: center;
+    background-color: #ff8207;
+    width: 100%;
+    left: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+li {
+    display: inline-block;
+}
+li:a {
+    display: block;
+    float: left;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+
+/* Contact Page */
+
+.formContainer {
+    margin-bottom: 30px;
+}
+
+.contactTitle {
+    border-bottom: 3px solid #eeedeb;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-style: bold;
+    color: #11ab9f;
+    font-family: 'Francois One', sans-serif;
+}
+
+.form {
+    font-family: 'Francois One', sans-serif;
+    color: #a1a6ac;
+    margin-top: 25px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+::placeholder {
+    color: #a1a6ac;
+    opacity: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+ 
+
+input[type=submit] {
+    background-color: #56aaa4;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Francois One', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #3d7a76;
+}
+
+
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+/* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
+/* RESPONSIVENESS */
+
+
+
+p {
+    border: 5px solid black;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    p {
+        border: 5px solid magenta;
+    }
+    /* PORTFOLIO BODY */
+    a.picture {
+        font-size: 1.45rem;
+    }
+    .aboutmeWrapper {
+        width: 65%;
+    }
+    .portfolioContainer {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: stretch;
+    }
+    .portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
+        box-sizing: content-box;
+        flex-shrink: unset;
+        /* align-items: stretch; */
+        height: auto;
+        overflow: visible;
+        margin-bottom: 10%;
+        margin-top: 0%;
+        margin-left: 0%;
+        max-width: 100% !important;
+        /* object-fit: contain; */
+    }
+
+
+    .portfolio5 {
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .bodyContainer {
+        margin: auto;
+    }
+    
+    .content {
+        flex-direction: column-reverse;
+    }
+    
+    .connectwithmeWrapper {
+        width: 90%;
+    }
+    .aboutmeWrapper {
+        width: 90%;
+    }
+
+    .portfolioContainer {
+        border: 5px solid yellow;
+        text-align: center;
+        border: 5px solid yellow;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    .portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
+        box-sizing: unset;
+        flex-shrink: unset;
+        height: auto;
+        overflow: visible;
+        margin-bottom: 10%;
+        margin-top: 0%;
+        margin-left: 0%;
+        max-width: 100% !important;
+    }
+
+    .portfolio5 {
+        margin-bottom: 0%;
+    }
+    
+    p {
+        border: 5px solid blue;
+    }
+
+    /* HEADER */
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+     
+    /*
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    */
+    .column {
+        /* display: flex;
+        flex-direction: column; */
+        width: 100%;
+        /* padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #11ab9f;
+        color: white;
+        display: inline-block;
+        background-color:#bbb; */
+    }
+    .Jeannie {
+        display: inline-block;
+        padding-left: 15px;
+    }
+    .Rose {
+        display: inline-block;
+    }
+    .pageLink {
+       
+    }
+    .pageLink a {
+        
+    }
+    .pageLink a:hover {
+    }
+    .link1 {
+        border-right: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .link2 {
+        border-right: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .link3 {
+        padding-right: 30px;
+    }
+    /* .column {
+        flex: 100%;
+    } */
+
+
+    /* INDEX BODY */
+
+
+    /* PORTFOLIO BODY */
+    a.picture {
+        font-size: .9rem;
+        padding-left: .9rem;
+        padding-right: .9rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        top: 76.5%;
+    }
+
+    /* CONTACT BODY */
+
+
+    /* CONNECT WITH ME */
+    .connectwithmeWrapper {
+        margin-bottom: 30px;
+    }
+
+    /* FOOTER */
+}
+
+
+
+@media screen and (max-width: 776px) {
+    p {
+        border: 5px solid red;
+    }
+
+    a.picture {
+        font-size: .6rem;
+    }
+    .headerContainer {
+        /* display: flex;
+        justify-content: space-between; */
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    a.picture {
+      font-size: 1.8rem;
+    }
+  }
+*/
