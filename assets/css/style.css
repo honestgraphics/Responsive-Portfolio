@@ -113,7 +113,6 @@ img.portrait {
     line-height: 38px;
     color: #656565;
     margin-bottom: 18px;
-    border: 5px solid rgb(255, 55, 255);
 }
 ul {
     list-style-type: circle;
@@ -395,9 +394,6 @@ input[type=submit]:hover {
     img.portrait {
         width: 35%;
     }
-    p {
-        border: 5px solid magenta;
-    }
     .picture {
         text-align: justify;
     }
@@ -558,9 +554,6 @@ input[type=submit]:hover {
     
     .link3 {
         margin-right: 0px;
-    }
-    p {
-        border: 5px solid red;
     }
     img.portrait {
         width: 40%;
