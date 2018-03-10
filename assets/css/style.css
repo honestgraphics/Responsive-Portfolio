@@ -11,7 +11,6 @@ body {
 
 .headerWrapper {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 24px;
     border-top: 2px solid #d0cdc7;
     border-bottom: 2px solid #d0cdc7;
     background-color: #fff;
@@ -49,30 +48,17 @@ body {
 .pageLink {
     padding-top: 50px;
     padding-bottom: 25px;
-    text-decoration: none;
+    font-size: 32px;
+    text-align: center;
 }
-
-
 .pageLink a {
-    text-decoration: none;
     color: #a6acb7;
 }
-
 .pageLink a:hover {
     color: #11ab9f;
 }
-
-ul {
-
-}
-
-li {
-    list-style-type: none;
-    
-}
-
 .link1 {
-    border-right: 1px solid #e2e0dd;
+    border-right: 2px solid #e2e0dd;
     padding-right: 20px;
     padding-left: 20px;
     font-family: 'Francois One', sans-serif;
@@ -80,7 +66,7 @@ li {
 }
 
 .link2 {
-    border-right: 1px solid #e2e0dd;
+    border-right: 2px solid #e2e0dd;
     padding-right: 20px;
     padding-left: 20px;
     font-family: 'Francois One', sans-serif;
@@ -119,7 +105,6 @@ li {
     padding-bottom: 10px;
     padding-left: 30px;
     margin-bottom: 25px;
-    font-size: 18px;
     border: 1px solid #e2e0dd;
 }
 
@@ -133,26 +118,27 @@ li {
     color: #11ab9f;
     font-family: 'Francois One', sans-serif;
 }
-
-.portrait {
+img.portrait {
+    width: 25%;
     float: left;
     margin-right: 3%;
     margin-bottom: 1.5%;
 }
 
-p {
-    font-size: 22px;
+.indexText {
+    font-size: 1.45rem;
     line-height: 38px;
     color: #656565;
     margin-bottom: 18px;
+    border: 5px solid rgb(255, 55, 255);
 }
-
 ul {
     list-style-type: circle;
     color: #656565;
     margin-left: 10%;
     margin-bottom: 18px;
     line-height: 37px;
+    font-size: 1.45rem;
 }
 
 .connectwithmeWrapper {
@@ -230,7 +216,7 @@ footer {
     box-sizing: border-box;
 }
 
-.portfolio1 img {
+.portfolio1 img, portfolio2 img, portfolio3 img, portfolio4 img, portfolio5 img {
     width: 100% !important;
 }
 
@@ -267,45 +253,44 @@ footer {
 
 .portfolio2 {
     position: relative;
-    height: auto;
     box-sizing: border-box;
     flex-shrink: 0;
+    height: auto;
     overflow: hidden;
 }
 
 .portfolio3 {
     position: relative;
-    margin-top: 25px;
     box-sizing: border-box;
     flex-shrink: 0;
     height: auto;
     overflow: hidden;
-    
+    margin-top: 25px;
 }
 
 .portfolio4 {
     position: relative;
-    margin-top: 25px;
     box-sizing: border-box;
     flex-shrink: 0;
     height: auto;
     overflow: hidden;
+    margin-top: 25px;
 }
 
 .portfolio5 {
     position: relative;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    flex-direction: row-reverse;
     box-sizing: border-box;
     flex-shrink: 0;
     height: auto;
     overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    flex-direction: row-reverse;
 }
 
 img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -323,8 +308,8 @@ a.picture {
     text-decoration: none;
     font-size: 24px;
 }
-ul {
-    list-style-type: none;
+/* ul {
+    list-style-type: circle;
     margin: 0;
     padding: 0;
     text-align: right;
@@ -337,7 +322,7 @@ li:a {
     float: left;
     padding: 10px 10px;
     text-decoration: none;
-}
+} */
 
 /* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
 
@@ -359,7 +344,7 @@ li:a {
 }
 
 .form {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Francois One',sans-serif;
     color: #a1a6ac;
     margin-top: 25px;
 }
@@ -397,28 +382,31 @@ input[type=submit]:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
 /* \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ *\
-/* RESPONSIVENESS */
+/* MEDIA QUERIES */
 
 
-
-p {
-    border: 5px solid black;
-}
-
-
-
-@media screen and (max-width: 1200px) {
-    p {
-        border: 5px solid magenta;
-    }
-    /* PORTFOLIO BODY */
-    a.picture {
-        font-size: 1.45rem;
-    }
+@media screen and (max-width: 1500px) {
     .aboutmeWrapper {
         width: 65%;
+        margin-right: 3%;
+    }
+    .connectwithmeWrapper {
+        width: 25%;
     }
     .portfolioContainer {
         text-align: center;
@@ -429,51 +417,129 @@ p {
         align-items: stretch;
     }
     .portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
-        box-sizing: content-box;
+        box-sizing: unset;
         flex-shrink: unset;
-        /* align-items: stretch; */
         height: auto;
         overflow: visible;
         margin-bottom: 10%;
         margin-top: 0%;
         margin-left: 0%;
-        max-width: 100% !important;
-        /* object-fit: contain; */
+        width: 48% !important;
+        display: block;
     }
-
-
     .portfolio5 {
         margin-bottom: 0%;
     }
+
+/* find 1500 */
+    .indexText {
+        font-size: 1.45rem;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    ul {
+        margin-left: 10%;
+        margin-bottom: 18px;
+        line-height: 37px;
+        font-size: 1.45rem;
+    }
+    img.portrait {
+        width: 30%;
+    }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .formContainer {
+        width: 100% !important;
+    }
+    img.portrait {
+        width: 35%;
+    }
+    p {
+        border: 5px solid magenta;
+    }
+    .picture {
+        text-align: justify;
+    }
+    .mainContent {
+        width: 55%;
+        margin-right: 3%;
+    }
+    .connectwithmeWrapper {
+        width: 23%;
+    }
+    .portfolioContainer {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: stretch;
+    }
+    .portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
+        box-sizing: unset;
+        flex-shrink: unset;
+        height: auto;
+        overflow: visible;
+        margin-bottom: 10%;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 46% !important;
+        display: block;
+    }
+    .portfolio5 {
+        margin-bottom: 0%;
+    }
+
+/* find 1200 */
+    .indexText {
+        font-size: 1.45rem;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    ul {
+        margin-left: 10%;
+        margin-bottom: 18px;
+        line-height: 37px;
+        font-size: 1.45rem;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 990px) {
     .bodyContainer {
         margin: auto;
     }
-    
+    .pageLink {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     .content {
         flex-direction: column-reverse;
     }
-    
     .connectwithmeWrapper {
         width: 90%;
     }
     .aboutmeWrapper {
         width: 90%;
+        margin-right: 3%;
     }
-
     .portfolioContainer {
-        border: 5px solid yellow;
         text-align: center;
-        border: 5px solid yellow;
         flex-direction: column;
         width: 100%;
         box-sizing: border-box;
         text-align: center;
     }
-
-
     .portfolio1, .portfolio2, .portfolio3, .portfolio4, .portfolio5 {
         box-sizing: unset;
         flex-shrink: unset;
@@ -483,17 +549,11 @@ p {
         margin-top: 0%;
         margin-left: 0%;
         width: 100% !important;
+        display: block;
     }
-
     .portfolio5 {
         margin-bottom: 0%;
     }
-    
-    p {
-        border: 5px solid blue;
-    }
-
-    /* HEADER */
     .headerContainer {
         display: flex;
         flex-direction: column;
@@ -501,25 +561,8 @@ p {
         margin: auto;
         text-align: center;
     }
-     
-    /*
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    */
     .column {
-        /* display: flex;
-        flex-direction: column; */
         width: 100%;
-        /* padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: #11ab9f;
-        color: white;
-        display: inline-block;
-        background-color:#bbb; */
     }
     .Jeannie {
         display: inline-block;
@@ -527,14 +570,6 @@ p {
     }
     .Rose {
         display: inline-block;
-    }
-    .pageLink {
-       
-    }
-    .pageLink a {
-        
-    }
-    .pageLink a:hover {
     }
     .link1 {
         border-right: 0px;
@@ -547,88 +582,74 @@ p {
         padding-left: 20px;
     }
     .link3 {
-        padding-right: 30px;
+        margin-right: 70px;
     }
-    /* .column {
-        flex: 100%;
-    } */
-
-
-    /* INDEX BODY */
-
-
-    /* PORTFOLIO BODY */
     a.picture {
-        font-size: .9rem;
         padding-left: .9rem;
         padding-right: .9rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         top: 76.5%;
     }
-
-    /* CONTACT BODY */
-
-
-    /* CONNECT WITH ME */
     .connectwithmeWrapper {
         margin-bottom: 30px;
     }
-
-    /* FOOTER */
+    .portfolio5 {
+        margin-bottom: 3%;
+    }
+    img.portrait {
+        width: 35%;
+    }
+    
+/* find 990 */
+    .indexText {
+        font-size: 1.45rem;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    ul {
+        margin-left: 10%;
+        margin-bottom: 18px;
+        line-height: 37px;
+        font-size: 1.45rem;
+    }
 }
+
+
+
 
 
 
 @media screen and (max-width: 776px) {
+    
+    .link3 {
+        margin-right: 0px;
+    }
     p {
         border: 5px solid red;
     }
-
-    a.picture {
-        font-size: .6rem;
+    img.portrait {
+        width: 40%;
     }
     .headerContainer {
-        /* display: flex;
-        justify-content: space-between; */
         width: 100%;
-        /* margin: 0 auto; */
     }
-    
-    
+    .portfolio5 {
+        margin-bottom: 5%;
+    }
+    .picture {
+        text-align: justify;
+    }
+/* find 776 */
+    .indexText {
+        font-size: 1.45rem;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    ul {
+        margin-left: 10%;
+        margin-bottom: 18px;
+        line-height: 37px;
+        font-size: 1.45rem;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
-  }
-  
-  @include media-breakpoint-up(lg) {
-    a.picture {
-      font-size: 1.8rem;
-    }
-  }
-*/
